@@ -23,11 +23,11 @@ Finger Nft搭建可以用宝塔面板，通过宝塔安装，后续如果为了�
 
 ### IPFS安装
 ```
-wget https://dist.ipfs.io/go-ipfs/v0.9.1/go-ipfs_v0.9.1_linux-amd64.tar.gz
-tar –zxvf go-ipfs_v0.9.1_linux-amd64.tar.gz
+wget https://dist.ipfs.io/go-ipfs/v0.11.0/go-ipfs_v0.11.0_linux-amd64.tar.gz
+tar –zxvf go-ipfs_v0.11.0_linux-amd64.tar.gz
 // 或者分两步
-gunzip go-ipfs_v0.9.1_linux-amd64.tar.gz
-tar –xvf go-ipfs_v0.9.1_linux-amd64.tar
+gunzip go-ipfs_v0.11.0_linux-amd64.tar.gz
+tar –xvf go-ipfs_v0.11.0_linux-amd64.tar
 cd go-ipfs
 sh install.sh
 ```
