@@ -75,6 +75,27 @@ nohup ipfs daemon > ipfs.log &
 
 记得执行完成后，敲一下回车，直接断开连接，有可能也导致ipfs关闭
 
+如果运行上述命令断开后IPFS还是会关闭,那么就使用如下命令:
+```
+vi /usr/lib/systemd/system/ipfs.service
+```
+复制如下内容并保存:
+```
+[Unit]
+Description=IPFS Daemon
+
+[Service]
+ExecStart=systemctl daemon-reload daemon
+KillSignal=SIGINT
+
+[Install]
+WantedBy=default.target
+```
+运行:
+```
+systemctl daemon-reload
+systemctl start nginx.service
+```
 
 ## Finger Nft市场搭建
 
